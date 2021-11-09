@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form {
+            background-color: aqua;
+            padding: 10px;
+            width: 500px;
+        }
+
+            table {
+            width:500px;
+            height:300px;
+        }
+
+        table, tr, td, th {
+            background-color: white;
+            padding: 7px;
+        }
+
+        th {
+            color: white;
+            background-color: darkorange ;
+        }
+
+        td {
+            width: 25%
+        }
+
+        .title1 {
+            color: blue;
+            text-align: right;
+        }
+
+        .title2 {
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+            </tr>
+            <tr>
+                <td class="title1">Họ và tên</td>
+                <td colspan="3"><Input type="text" size="30"></td>
+            </tr>
+            <tr>
+                <td class="title1">Email</td>
+                <td colspan="3"><Input type="text" sze="20"></td>
+            </tr>
+            <tr>
+                <td class="title1">Sở thích</td>
+                <td class="title2"><Input type="checkbox">Thể thao</td>
+                <td class="title2"><Input type="checkbox">Âm nhạc</td>
+                <td class="title2"><Input type="checkbox">Đọc sách</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="title2"><input type="checkbox">Lướt web</td>
+                <td class="title2"><input type="checkbox">Chơi game</td>
+                <td class="title2"><input type="checkbox">Điện ảnh</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="title2"><input type="checkbox">Du lịch</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Gửi thông tin"></td>
+                <td><input type="submit" value="Nhập lại"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
