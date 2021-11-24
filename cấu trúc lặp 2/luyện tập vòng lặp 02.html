@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--                //bài 1-->
+<!--<script>-->
+<!--    let f0 = 0-->
+<!--    let f1 = 1-->
+<!--    let f2 = 1-->
+<!--    document.write(f0 + "<br>")-->
+<!--    document.write(f1 + "<br>")-->
+<!--    document.write(f2 + "<br>")-->
+<!--    for (let i = 0 ; i < 100 ; i++ ){-->
+<!--        f0 = f1 + f2;-->
+<!--        f1 = f2;-->
+<!--        f2 = f0-->
+<!--        document.write(f0 + "<br/>")-->
+<!--    }-->
+<!--</script>-->
+--------------------------------------------------
+<!--                    //bài 2-->
+<!--<script>-->
+<!--    let number = +prompt("Nhập 1 số nguyên dương lớn hơn 0 bất kì:");-->
+<!--    let giaiThua = 1;-->
+<!--    if (number <= 0) {-->
+<!--        alert("Nhập số lớn hơn 0")-->
+<!--        number = +prompt("Nhập 1 số nguyên dương lớn hơn 0 bất kì:");-->
+<!--    } else {-->
+<!--        for (let i = 1; i <= number; i++) {-->
+<!--            giaiThua = giaiThua * i;-->
+<!--        }-->
+<!--    }-->
+<!--    document.write(giaiThua);-->
+<!--</script>-->
+------------------------------------------------
+<!--                //bài 5-->
+<!--<label for="input1">Nhập số tiền</label><input type="number" id="input1">-->
+<!--<label for="input2">Nhập số tháng</label><input type="number" id="input2">-->
+<!--<label for="input3">Nhập lãi suất</label><input type="number" id="input3">-->
+<!--<button type="button" onclick="result()">Tính lãi</button>-->
+<!--<h2 id="display"></h2>-->
+<!--<script>-->
+<!--    function result() {-->
+<!--        let tien = +document.getElementById('input1').value;-->
+<!--        let thang = +document.getElementById('input2').value;-->
+<!--        let laiSuat = +document.getElementById('input3').value;-->
+<!--        let sum = tien;-->
+<!--        let laiHangThang = 0;-->
+<!--        for (let i = 1; i <= thang; i++) {-->
+<!--            laiHangThang = +(sum * laiSuat / 100).toFixed(2);-->
+<!--            sum = sum + laiHangThang;-->
+<!--        }-->
+<!--        document.getElementById('display').innerHTML = 'Tổng tiền: ' + sum;-->
+<!--    }-->
+
+<!--</script>-->
+--------------------------------------------------------
+<!--                    //bài 3-->
+
+<!--<script>-->
+<!--    let sao1 = "";-->
+<!--    for (let i = 1; i < 6; i++) {-->
+<!--        sao1 = sao1 + "*";-->
+<!--        document.write(sao1);-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--    document.write("<br>")-->
+<!--// -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+<!--    let sao2 = "";-->
+<!--    let space2 = "";-->
+<!--    for (let i = 0; i < 5; i++) {-->
+<!--        space2 = "&nbsp" + "&nbsp";-->
+<!--        for (let j = 5 - i; j > 0; j&#45;&#45;) {-->
+<!--            sao2 = "*";-->
+<!--            document.write(sao2);-->
+
+
+<!--        }-->
+<!--        document.write(space2);-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--// -&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+
+<!--    document.write("<br>");-->
+<!--    let sao3 = "";-->
+<!--    let space3 = "";-->
+<!--    for (let i = 0; i < 5; i++) {-->
+<!--        for (let j = 5 - i; j > 0; j&#45;&#45;) {-->
+<!--            space3 = "&nbsp" + "&nbsp";-->
+<!--            document.write(space3);-->
+
+<!--        }-->
+<!--        space3 = "";-->
+<!--        sao3 = sao3 + "*";-->
+<!--        document.write(sao3);-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--// &#45;&#45;&#45;&#45;&#45;&#45;-->
+
+
+<!--    document.write("<br>");-->
+<!--    let sao4 = "";-->
+<!--    let space4 = "";-->
+<!--    for (let i = 0; i < 5; i++) {-->
+<!--        space4 = space4 + "&nbsp" + "&nbsp";-->
+<!--        document.write(space4);-->
+<!--        for (let j = 5 - i; j > 0; j&#45;&#45;) {-->
+<!--            sao4 = "*";-->
+<!--            document.write(sao4);-->
+<!--        }-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--</script>-->
+--------------------------------------
+<!--                //bài 4-->
+<script>
+    let sao = "";
+    let space = "";
+    for (let i = 1; i <= 6; i++) {
+        for (let j = 1; j <= 20; j++) {
+            if (i == 1 || i == 6 || j == 1 || j == 20) {
+                sao = sao + '*';
+                document.write(sao);
+                sao = "";
+            } else {
+                space = space + "&nbsp" + "&nbsp";
+                document.write(space)
+                space = "";
+            }
+        }
+        document.write('</br>');
+    }
+</script>
+</body>
+</html>

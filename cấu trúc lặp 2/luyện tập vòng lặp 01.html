@@ -1,0 +1,169 @@
+let<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--                //bài 1-->
+<!--<p id="demo"></p>-->
+<!--<script>-->
+<!--    let text = "";-->
+<!--    let i;-->
+
+<!--    for ( i = 1; i <= 100; i++) {-->
+<!--        text += + i + "<br>";-->
+<!--    }-->
+<!--    alert("hoàn thành", i = 99)-->
+<!--    document.getElementById("demo").innerHTML = text-->
+<!--    // alert("hoàn thành", i = 99)-->
+<!--</script>-->
+<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--                        //bài 2-->
+<!--<script>-->
+<!--    let nhietDo = prompt('Nhap nhiet do');-->
+<!--    if (nhietDo > 100 ){-->
+<!--        alert('Giam nhiet do')-->
+<!--    }else if (nhietDo <20){-->
+<!--        alert('Tang nhiet do')-->
+<!--    }else {alert('Nhiet do ok')}-->
+<!--</script>-->
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--                //bài 3-->
+<!--<script>-->
+<!--    let f0 = 0-->
+<!--    let f1 = 1-->
+<!--    let f2 = 1-->
+<!--    document.write(f0 + "<br>")-->
+<!--    document.write(f1 + "<br>")-->
+<!--    document.write(f2 + "<br>")-->
+<!--    for (let i = 0 ; i < 20 ; i++ ){-->
+<!--        f0 = f1 + f2;-->
+<!--        f1 = f2;-->
+<!--        f2 = f0-->
+<!--        document.write(f0 + "<br/>")-->
+<!--    }-->
+<!--</script>-->
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--                //bài 4-->
+<!--<script>-->
+<!--    let f0 = 0;-->
+<!--    let f1 = 1;-->
+<!--    let fn;-->
+<!--    let totalNum = f0;-->
+<!--    let i =1;-->
+<!--    while (i > 0){-->
+<!--        fn = f1 + f0;-->
+<!--        f0 = f1;-->
+<!--        f1 = fn;-->
+<!--            if (f0 %5 === 0){-->
+<!--                totalNum = f0;-->
+<!--                break-->
+<!--            }-->
+<!--        i++-->
+<!--    }-->
+<!--    document.write(totalNum)-->
+<!--</script>-->
+------------------------------------------------------------------------------
+<!--                //bài5-->
+<!--<script>-->
+<!--    let n = +prompt('Nhập vào số: ')-->
+<!--    let f0 = 0;-->
+<!--    let f1 = 1;-->
+<!--    let fn;-->
+<!--    let nextNum = f0;-->
+<!--    while (n > 0) {-->
+<!--        nextNum = nextNum + f0;-->
+<!--        fn = f1 + f0;-->
+<!--        f0 = f1;-->
+<!--        f1 = fn;-->
+<!--        n&#45;&#45;;-->
+<!--    }-->
+<!--    document.write('Tổng của các số fibonacci đầu tiên là: ' + nextNum )-->
+<!--</script>-->
+------------------------------------------------------------
+<!--                            // Bài 6-->
+<!--<script>-->
+<!--    let sum = 0;-->
+<!--    let i = 0;-->
+<!--    for (let i = 1; i <= 30; i++) {-->
+<!--        sum += (i * 7);-->
+<!--        document.write("Tổng của 30 số chia hết cho 7 là: ");-->
+<!--    }-->
+<!--</script>-->
+-----------------------------------------------------------
+<!--                    //Bài 7-->
+<!--<script>-->
+<!--    for (let i = 1; i <= 100; i++) {-->
+<!--        if (i % 5 === 0 && i % 3 === 0) {-->
+<!--            document.write("FizzBuzz" + '<br>');-->
+<!--        } else if (i % 3 === 0) {-->
+<!--            document.write("Fizz" + '<br>');-->
+<!--        } else if (i % 5 === 0) {-->
+<!--            document.write("Buzz" + '<br>');-->
+<!--        } else {-->
+<!--            document.write(i + '<br>');-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+--------------------------------------------------------------
+<!--                        //Bài 8-->
+<script>
+    function start() {
+        let num1 = parseInt(prompt("Nhập vào giá trị dưới: "))
+        let num2 = parseInt(prompt("Nhập vào giá trị trên: "))
+
+        //xử lý tình huống ng dùng nhập 2 số giống nhau
+        while (num1 === num2) {
+            alert("Nhập lại đi bạn eey!!")
+            num1 = parseInt(prompt("Nhập vào giá trị dưới: "))
+            num2 = parseInt(prompt("Nhập vào giá trị trên: "))
+        }
+        let result
+
+        //xử lý người dùng nhập ở khoảng bất kỳ
+        if (num1 < num2) {
+            result = Math.round(Math.random() * (num2 - num1))
+            result = result + num1
+        } else if (num1 > num2) {
+            result = Math.round(Math.random() * (num1 - num2) + num2)
+        }
+        let count = 1
+        let check = false
+        //bắt đầu chơi
+        alert("Đoán đi bạn eey!!!")
+        let guestNum = parseInt(prompt("Đoán lần " + count + ": "))
+
+        //lặp lại phần nhập giá trị đoán vs số lần nhất định
+        do {
+            //nếu thắng
+            if (guestNum === result) {
+                alert("You win!!")
+                check = true
+                break
+            } else if (guestNum < result) { //gợi ý khi đoán nhỏ hơn
+                alert("Đoán tăng lên đi!")
+                guestNum = parseInt(prompt("Đoán lần " + (count + 1) + ": "))
+                count++
+            } else { //gợi ý khi đoán to hơn
+                alert("Đoán giảm xuống đi!")
+                guestNum = parseInt(prompt("Đoán lần " + (count + 1) + ": "))
+                count++
+            }
+        }
+        while (count <= 2)
+
+        //nếu thua
+        if (check === false) {
+            alert("You die!")
+        }
+    }
+</script>
+</script>
+
+
+
+
+
+</body>
+</html>
