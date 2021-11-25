@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--            //bài 1-->
+<!--<script>-->
+<!--    function calSquare(num) {-->
+<!--        let squareResult = num * num;-->
+<!--        return squareResult;-->
+<!--    }-->
+<!--    alert("Bình phương của 4 = " + calSquare(4));-->
+<!--</script>-->
+--------------------------------------------------------
+<!--                //bài 2-->
+<!--<script>   -->
+<!--    function calCircleS(num) {-->
+<!--        let circleS = num * num * Math.PI;-->
+<!--        return circleS;-->
+<!--    }-->
+<!--    alert("Diện tích hình tròn với bán kính 4 = " + calCircleS(4));-->
+
+<!--    function calCircleP(num) {-->
+<!--        let circleP = 2 * num * Math.PI;-->
+<!--        return circleP;-->
+<!--    }-->
+<!--    alert("Chu vi hình tròn với bán kính 4 = " + calCircleP(4));-->
+<!--</script>-->
+-------------------------------------------------------
+<!--                    //bài 3-->
+<!--<script>   -->
+<!--    function calFactorial(num) {-->
+<!--        let factorial = 1;-->
+<!--        for (let i = 1; i < num+1; i++) {-->
+<!--            factorial = factorial * i;-->
+<!--        }-->
+<!--        return factorial;-->
+<!--    }-->
+<!--    alert("Giai thừa của 4 = " + calFactorial(4));-->
+<!--</script>-->
+-------------------------------------------------------
+<!--                    //bài 4-->
+<!--<script>  -->
+<!--    function isANumber(num){-->
+<!--        if (isNaN(num) == false){-->
+<!--            return true-->
+<!--        } else {-->
+<!--            return false-->
+<!--        }-->
+<!--    }-->
+<!--    let a = +prompt("Nhập 1 ký tự số chữ tùy chọn");-->
+<!--    alert(isANumber(a));-->
+<!--</script>-->
+ -----------------------------------------------------
+<!--                    //bài 5-->
+<!--<script>    -->
+<!--    function calMinNumber(num1, num2, num3){-->
+<!--        if (num1 < num2 && num1 < num3){-->
+<!--            return num1-->
+<!--        } else if (num2 < num3){-->
+<!--            return num2-->
+<!--        } else {-->
+<!--            return num3-->
+<!--        }-->
+<!--    }-->
+<!--    let a = +prompt("Nhập số a đi")-->
+<!--    let b = +prompt("Nhập số b đi")-->
+<!--    let c = +prompt("Nhập số c đi")-->
+<!--    alert(calMinNumber(a,b,c))-->
+<!--</script>    -->
+-------------------------------------
+<!--            //bài 6-->
+<!--<script>-->
+<!--    function checkPositive(num){-->
+<!--        if (num >= 0){-->
+<!--            return true-->
+<!--        } else {-->
+<!--            return false-->
+<!--        }-->
+<!--    }-->
+<!--    let a = +prompt("Nhập số a đi")-->
+<!--    alert(checkPositive(a))-->
+<!--</script>-->
+------------------------------------
+<!--           //Bài 7-->
+<!--<script>-->
+<!--    function changePosition(arr) {-->
+<!--        let temp;-->
+<!--        temp = arr[0]-->
+<!--        arr[0] = arr[1]-->
+<!--        arr[1] = temp;-->
+<!--        return arr;-->
+<!--    }-->
+<!--    let arr = [];-->
+<!--    arr[0] = +prompt("Nhập số thứ nhất")-->
+<!--    arr[1] = +prompt("Nhập số thứ hai")-->
+<!--    alert("Dãy số trước biến đổi: " + arr.join())-->
+<!--    changePosition(arr)-->
+<!--    alert("Dãy số sau biến đổi: " + arr.join())-->
+<!--</script>-->
+-------------------------------------------------
+<!--                // Bài 8-->
+<!--<script>-->
+<!--    function reverseArray(arr) {-->
+<!--        for (let i = 0; i < arr.length / 2; i++) {-->
+<!--            let temp = arr[i];-->
+<!--            arr[i] = arr[arr.length - 1 - i];-->
+<!--            arr[arr.length - 1 - i] = temp-->
+<!--        }-->
+<!--        return arr;-->
+<!--    }-->
+
+<!--    arrLength = +prompt("Số lượng phần tử")-->
+<!--    let arr1 = [];-->
+<!--    for (let i = 0; i < arrLength; i++) {-->
+<!--        arr1[i] = +prompt("Nhập số thứ " + (i + 1))-->
+<!--    }-->
+<!--    alert("Dãy trước đảo là: " + arr1.join())-->
+<!--    reverseArray(arr1)-->
+<!--    alert("Dãy sau đảo là: " + arr1.join())-->
+<!--</script>-->
+--------------------------------------
+<!--                // Bài 9-->
+<script>
+    function checkSymbol(arr, sym) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (sym == arr[i]) {
+                count++;
+            }
+        }
+        return count;
+    }
+    let str = prompt("Nhập thử đi");
+    let sym = prompt("ký tự cần kiểm tra");
+    alert(checkSymbol(str, sym));
+</script>
+</body>
+</html>

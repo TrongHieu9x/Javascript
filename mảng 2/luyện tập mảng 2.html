@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--                //bài 1-->
+<!--<script>-->
+<!--    let a = [-->
+<!--        [1,2,1,24],-->
+<!--        [8,11,9,4],-->
+<!--        [7,0,7,27],-->
+<!--        [7,4,28,14],-->
+<!--        [3,10,26,7]-->
+<!--    ];-->
+<!--    for (let i in a) {-->
+<!--        console.log("row " + i);-->
+<!--        for (let j in a[i]){-->
+<!--            console.log(a[i][j]);-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+------------------------------------------------
+<!--                //bài 2-->
+<!--<script>-->
+<!--    let arr1 = ['c', 's', 'c', '2', '6', '1'];-->
+<!--    arrays = arr1.reverse().join().toString();-->
+<!--    console.log(arrays)-->
+<!--</script>-->
+---------------------------------------------
+<!--                    //bài 3-->
+<!--<script>-->
+<!--    let arr = +prompt("nhập vào số lượng: ");-->
+<!--    let array = [];-->
+<!--    for(let i = 0; i < +arr; i++){-->
+<!--        array[i] =prompt("nhập vào phần tử " + ( i + 1));-->
+<!--    }-->
+<!--    let cout = 0;-->
+<!--    for (let value of array) {-->
+<!--        if (isNaN(value) == false) {-->
+<!--            cout++-->
+<!--        }-->
+<!--    }-->
+<!--    console.log(array);-->
+<!--    console.log(cout);-->
+<!--</script>-->
+----------------------------------------------
+<!--                    //bài 4-->
+<!--<script>-->
+<!--    let input = prompt("nhập vào số lượng phần tử: ");-->
+<!--    let array = [];-->
+<!--    for ( let i = 0; i < +input; i++){-->
+<!--        array[i] = prompt("nhập vào phần tử " + (i + 1));-->
+<!--    }-->
+<!--    let srt = array.join("");-->
+<!--    console.log(srt.length)-->
+<!--</script>-->
+--------------------------------------------
+<!--                    //bài 5-->
+<script>
+    let input = prompt("Nhập vào số lượng phần tử trong mảng: ");
+    let number1 = [];
+    for (let i = 0; i < +input; i++) {
+        number1[i] = prompt("Nhập vào phần tử thứ " + (i + 1));
+    }
+    let input1 = prompt("Nhập vào số lượng phần tử trong mảng: ");
+    let number2 = [];
+    for (let j = 0; j < +input1; j++) {
+        number2[j] = prompt("Nhập vào phần tử thứ " + (i + 1));
+    }
+
+    let number1 = [-3, 2, 1, 'a', 3, 40, 8, 50, 20, 30];
+    let number2 = [-3, 2, 1, 'a', 3, 40, 8, 50, 20, 30];
+    let flag = true;
+    for (let i = 0; i < number1.length; i++) {
+        if (number1[i] !== number2[i]) {
+            flag = false;
+            break;
+        }
+    }
+    if (flag == false) {
+        alert("2 arrays khác nhau")
+    } else {
+        alert("2 arrays giống nhau")
+    }
+</script>
+--------------------------------------------
+                // Bài 6
+<!--<script>-->
+<!--    let str = ('2 - 4 - 5 - 90 - 6');-->
+<!--    console.log(str.replace(/-/g, '_'));-->
+
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--                    // Bài 1-->
+<!--<script>-->
+<!--    function alertMessage() {-->
+<!--        alert("Xin chào");-->
+<!--    }-->
+<!--</script>-->
+-----------------------------------------------
+<!--                //bài 2-->
+<!--<script>        -->
+<!--    function getMoreOne() {-->
+<!--        let num1 = +prompt("Nhập số vào đi bạn")-->
+<!--        alert("Hiển thị ra số này cho vui nè: " + (num1 + 1))-->
+<!--    }-->
+<!--</script>-->
+----------------------------------------------
+<!--                 // Bài 3-->
+<!--<script>   -->
+<!--    function compareTo() {-->
+<!--        let num2 = +prompt("Nhập số thứ nhất (số nhá, đừng chữ)");-->
+<!--        let num3 = +prompt("Nhập số thứ hai (số nhá, đừng chữ)");-->
+<!--        if (num2 > num3) {-->
+<!--            alert("Số thứ nhất lớn hơn nhé");-->
+<!--        } else if (num2 <= num3) {-->
+<!--            alert("Tổng của 2 số bằng " + (num2 + num3));-->
+<!--        }-->
+<!--    }-->
+<!--   -->
+<!--</script>-->
+-------------------------------------------------------
+<!--            // Bài 4-->
+<!--<script> -->
+<!--    function addNumbers() {-->
+<!--        firstNum = 4;-->
+<!--        secondNum = 8;-->
+<!--        result = firstNum + secondNum;-->
+<!--        return result;-->
+<!--    }-->
+<!--    result = 0;-->
+<!--    alert("Biến result trước khi gọi hàm = " + result)-->
+<!--    result = addNumbers();-->
+<!--    alert("Biến result sau khi gọi hàm = " + result)-->
+<!--</script>  -->
+---------------------------------------------------
+<!--                    // Bài 5-->
+<script>
+    function ngoiSao() {
+        let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let arr2 = ['Ursa Minor', 'Taurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let input = prompt("Ngôi sao nào đây ");
+        let flag = false;
+        for (let i = 0; i < arr1.length; i++) {
+            if (input === arr1[i]) {
+                flag = true;
+                alert("Ngôi sao " + input + " thuộc chòm sao " + arr2[i])
+                break;
+            }
+        }
+        if (flag == false) {
+            alert("Ngôi sao này không thuộc chòm sao  mình biết")
+        }
+    }
+    ngoiSao()
+</script>
+</body>
+</html>

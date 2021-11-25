@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Type somethings here</h1>
+<textarea name="typeHere" id="faking" cols="30" rows="10"></textarea>
+
+<script>
+    function fakingTextArea() {
+        let base = "gõ nữa cũng không ra tiền đâu";
+        let baseArr = base.split('');
+        let fake = '';
+        let text = document.getElementById("faking").value;
+        for (let i = 0; i < text.length; i++) {
+            fake = fake + baseArr[i]
+            if (i == baseArr.length) {
+                fake = '';
+                document.getElementById('faking').value = ''
+            }
+            document.getElementById('faking').value = fake
+        }
+        setTimeout(fakingTextArea, 1)
+    }
+
+    fakingTextArea()
+</script>
+</body>
+</html>

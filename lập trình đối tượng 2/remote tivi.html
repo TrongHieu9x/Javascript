@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let Television = function (remoteCode) {
+    this.tvProgram = 1;
+    this.remoteCode = remoteCode;
+    this.volume = 20;
+    this.isOn = false;
+    this.checkIsOn = function () {
+      if (this.isOn) {
+        console.log("TV on")
+      } else {
+        console.log("TV off")
+      }
+    }
+    this.turn = function () {
+      if (this.isOn) {
+        this.isOn = false;
+        console.log("Turn Off TV")
+      } else {
+        this.isOn = true
+        console.log("Turn On TV")
+      }
+    }
+    this.adjustVolume = function (number) {
+      if (this.isOn) {
+        number = Number(number);
+        this.volume += number
+        console.log("Volume:" + this.volume)
+      } else {
+        console.log("TV is OFF")
+      }
+    }
+    this.adjustTvProgram = function (number) {
+      if (this.isOn) {
+        number = Number(number);
+        this.tvProgram = number;
+        console.log("Change Chanel:" + this.tvProgram)
+      } else {
+        console.log("TV is OFF")
+      }
+    }
+  }
+  let Remote = function (remoteCode) {
+    this.remoteCode = remoteCode;
+    this.turnVolume = function (tv, number) {
+      if (tv.remoteCode === this.remoteCode) {
+        tv.adjustVolume(number);
+      }
+    }
+    this.turnTvProgram = function (tv, number) {
+      if (this.remoteCode === tv.remoteCode) {
+        tv.adjustTvProgram(number)
+      }
+    }
+    this.turnOnOff = function (tv) {
+      if (this.remoteCode === tv.remoteCode) {
+        tv.turn()
+      }
+    }
+  }
+  let sony = new Television(10112);
+  console.log(sony)
+  sony.turn()
+  sony.adjustTvProgram(7);
+
+  let sonyRemote = new Remote(10112);
+  sonyRemote.turnTvProgram(sony, 3);
+  sonyRemote.turnVolume(sony, 2);
+  sonyRemote.turnOnOff(sony);
+
+</script>
+</body>
+</html>

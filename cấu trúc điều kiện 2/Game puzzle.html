@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            display: flex;
+            position: relative;
+            top: 50px;
+            align-items: center;
+            flex-flow: column;
+        }
+        img {
+            width: 500px;
+            height: 100px;
+            margin: 2px 0;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <img id="anh1" src="anh/cat_1.jpg" alt="cat" onclick="click1()"/>
+    <img id="anh2" src="anh/monkey_2.jpg" alt="monkey" onclick="click2()"/>
+    <img id="anh3" src="anh/panda_3.jpg" alt="panda" onclick="click3()"/>
+    <img id="anh4" src="anh/cat_4.jpg" alt="cat" onclick="click4()"/>
+    <img id="anh5" src="anh/panda_5.jpg" alt="panda" onclick="click5()"/>
+</div>
+<script>
+    let so1 = 1;
+    let so2 = 1;
+    let so3 = 1;
+    let so4 = 1;
+    let so5 = 1;
+
+    function click1() {
+        if (so1 === 1) {
+            document.getElementById('anh1').src = "anh/monkey_1.jpg";
+            document.getElementById('anh1').alt = "monkey";
+            so1++;
+        } else if (so1 === 2) {
+            document.getElementById('anh1').src = "anh/panda_1.jpg";
+            document.getElementById('anh1').alt = "panda";
+            so1++;
+        } else {
+            document.getElementById('anh1').src = "anh/cat_1.jpg";
+            document.getElementById('anh1').alt = "cat";
+            so1 = 1;
+        }
+        soSanh()
+    }
+
+    function click2() {
+        if (so2 === 1) {
+            document.getElementById('anh2').src = "anh/panda_2.jpg";
+            document.getElementById('anh2').alt = "panda";
+            so2++;
+        } else if (so2 === 2) {
+            document.getElementById('anh2').src = "anh/cat_2.jpg";
+            document.getElementById('anh2').alt = "cat";
+            so2++;
+        } else {
+            document.getElementById('anh2').src = "anh/monkey_2.jpg";
+            document.getElementById('anh2').alt = "monkey";
+            so2 = 1;
+        }
+        soSanh()
+    }
+    function click3() {
+        if (so3 === 1) {
+            document.getElementById('anh3').src = "anh/cat_3.jpg";
+            document.getElementById('anh3').alt = "cat";
+            so3++;
+        } else if (so3 === 2) {
+            document.getElementById('anh3').src = "anh/monkey_3.jpg";
+            document.getElementById('anh3').alt = "monkey";
+            so3++;
+        } else {
+            document.getElementById('anh3').src = "anh/panda_3.jpg";
+            document.getElementById('anh3').alt = "panda";
+            so3 = 1;
+        }
+        soSanh()
+    }
+    function click4() {
+        if (so4 === 1) {
+            document.getElementById('anh4').src = "anh/monkey_4.jpg";
+            document.getElementById('anh4').alt = "monkey";
+            so4++;
+        } else if (so4 === 2) {
+            document.getElementById('anh4').src = "anh/panda_4.jpg";
+            document.getElementById('anh4').alt = "panda";
+            so4++;
+        } else {
+            document.getElementById('anh4').src = "anh/cat_4.jpg";
+            document.getElementById('anh4').alt = "cat";
+            so4 = 1;
+        }
+        soSanh()
+    }
+    function click5() {
+        if (so5 === 1) {
+            document.getElementById('anh5').src = "anh/cat_5.jpg";
+            document.getElementById('anh5').alt = "cat";
+            so5++;
+        } else if (so5 === 2) {
+            document.getElementById('anh5').src = "anh/monkey_5.jpg";
+            document.getElementById('anh5').alt = "monkey";
+            so5++;
+        } else {
+            document.getElementById('anh5').src = "anh/panda_5.jpg";
+            document.getElementById('anh5').alt = "panda";
+            so5 = 1;
+        }
+        soSanh()
+    }
+    function soSanh() {
+        let alt1 = document.getElementById('anh1').alt;
+        let alt2 = document.getElementById('anh2').alt;
+        let alt3 = document.getElementById('anh3').alt;
+        let alt4 = document.getElementById('anh4').alt;
+        let alt5 = document.getElementById('anh5').alt;
+        if (alt1 === alt2 && alt2 === alt3 && alt3 === alt4 && alt4 === alt5 && alt5 === alt1) {
+            document.getElementById('anh1').style.boxShadow = "0px 0px 2px 2px red";
+            document.getElementById('anh2').style.boxShadow = "0px 0px 2px 2px red";
+            document.getElementById('anh3').style.boxShadow = "0px 0px 2px 2px red";
+            document.getElementById('anh4').style.boxShadow = "0px 0px 2px 2px red";
+            document.getElementById('anh5').style.boxShadow = "0px 0px 2px 2px red";
+        } else {
+            document.getElementById('anh1').style.boxShadow = "none";
+            document.getElementById('anh2').style.boxShadow = "none";
+            document.getElementById('anh3').style.boxShadow = "none";
+            document.getElementById('anh4').style.boxShadow = "none";
+            document.getElementById('anh5').style.boxShadow = "none";
+        }
+    }
+</script>
+</body>
+</html>
