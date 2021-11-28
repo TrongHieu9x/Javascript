@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="800" height="500" style="border: 1px solid black"></canvas>
+<script>
+    class rectangle{
+        longs
+        wid
+        color
+        constructor(longs , wid, color) {
+            this.longs = longs;
+            this.wid = wid ;
+            this.color = color;
+        }
+        getLongs(){
+            return this.longs
+        }
+        getWid(){
+            return this.wid
+        }
+        setLongs(longsSet)
+        {
+            this.longs = longsSet;
+        }
+        setWid(widSet){
+            this.wid = widSet;
+        }
+        getArea(){
+            return this.longs * this.wid;
+        }
+        getPerimeter(){
+            return (this.longs + this.wid)*2;
+        }
+        draw(ctx){
+            ctx.beginPath();
+            ctx.fillStyle = this.color
+            ctx.fillRect(100, 100 , this.longs , this.wid);
+            ctx.fill();
+            ctx.closePath()
+        }
+    }
+    let rectangle2 = new rectangle(100 , 50, 'red');
+    // console.log(rectangle2.getLongs());
+    // console.log(rectangle2.getWid());
+    // document.write(rectangle2.getArea() + "<br/>");
+    // document.write(rectangle2.getPerimeter());
+    //
+    // rectangle2.setLongs(50);
+    // rectangle2.setWid(30);
+    // console.log(rectangle2.getLongs());
+    // console.log(rectangle2.getWid());
+    let ctx = document.getElementById("canvas").getContext("2d")
+    rectangle2.draw(ctx)
+    alert(rectangle2.getArea())
+</script>
+</body>
+</html>

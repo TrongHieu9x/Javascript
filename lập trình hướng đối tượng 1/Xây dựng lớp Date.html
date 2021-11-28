@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class MyDate {
+        day
+        month
+        year
+
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day;
+        }
+
+        getMonth() {
+            return this.month;
+        }
+
+        getYear() {
+            return this.year;
+        }
+
+        setDay(day) {
+            this.day = day;
+        }
+
+        setMonth(month) {
+            this.month = month;
+        }
+
+        setYear(year) {
+            this.year = year;
+        }
+
+        setDate(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        toString() {
+            alert(this.day + "/" + this.month + "/" + this.year)
+            alert(this.getDay() + "/" + this.getMonth() + "/" + this.getYear())
+        }
+    }
+
+    let myDate = new MyDate("01", "01", 2000)
+    // let day = myDate.getDay()
+    // alert(day + "/" + myDate.getMonth() + "/" + myDate.getYear())
+    // myDate.setDay(22)
+    // myDate.setMonth(11)
+    // myDate.setYear(2021)
+    // day = myDate.getDay()
+    // alert(day + "/" + myDate.getMonth() + "/" + myDate.getYear())
+    // myDate.setDate(15, 5, 2022)
+    // alert(myDate.getDay() + "/" + myDate.getMonth() + "/" + myDate.getYear())
+    myDate.setDate(15, "05", 2022)
+    myDate.toString()
+</script>
+</body>
+</html>
